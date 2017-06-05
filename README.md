@@ -44,7 +44,7 @@ GNU Radio module name identified: tuto
 Enter block type: general
 Language (python/cpp): cpp
 Language: C++
-Block/code identifier: square_in_cpp
+Block/code identifier: mysquare
 Enter valid argument list, including default arguments: 
 Add Python QA code? [Y/n] n
 Add C++ QA code? [Y/n] n
