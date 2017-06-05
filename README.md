@@ -125,4 +125,4 @@ sudo make install
 sudo ldconfig
 ```
 If everything goes fine, your module and its blocks are added in GNURadio!
-https://github.com/pcotret/gnuradio-tutorial/blob/master/img/grc_screen.png
+{https://github.com/pcotret/gnuradio-tutorial/blob/master/img/grc_screen.png}
