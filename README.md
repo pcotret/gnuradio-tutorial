@@ -107,3 +107,9 @@ int square_in_cpp_impl::general_work (int noutput_items,
       return noutput_items;
     }
 ```
+The block is ready to be compiled !
+
+First, let's create the XML interface (from the **gr-tuto** directory):
+```bash
+gr_modtool
+```
