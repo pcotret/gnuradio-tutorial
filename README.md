@@ -10,7 +10,7 @@ This tutorial will present several custom blocks:
 * ***_python:** same thing for those threee blocks in Python.
 
 ## Creation of an OTT (Out-Of-Tree) module
-Basically, an OTT module is a component that doesn't exist in a default GNURadio installation. It can be your own blocks or blocks made by someone else, downloaded from the web. A GNURadio module is a king of library: it contains a list of blocks that can be used in a GRC schematic.
+Basically, an OTT module is a component that doesn't exist in a default GNURadio installation. It can be your own blocks or blocks made by someone else, downloaded from the web. A GNURadio module is a kind of library: it contains a list of blocks that can be used in a GRC schematic.
 
 You won't be alone in this adventure. A tool called `gr_modtool` will help you with the most important operations needed to create a custom block. In order to create a custom block called `gnuradio-tutorial`, type the following command:
 
