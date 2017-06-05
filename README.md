@@ -82,13 +82,12 @@ The forecast function:
 ```C++
 void square_in_cpp_impl::forecast (int noutput_items, gr_vector_int &ninput_items_required)
 {
-ninput_items_required[0] = noutput_items;
+    ninput_items_required[0] = noutput_items;
 }
 ```
 The general work function:
 ```C++
-int
-    square_in_cpp_impl::general_work (int noutput_items,
+int square_in_cpp_impl::general_work (int noutput_items,
                        gr_vector_int &ninput_items,
                        gr_vector_const_void_star &input_items,
                        gr_vector_void_star &output_items)
