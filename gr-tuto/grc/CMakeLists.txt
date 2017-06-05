@@ -18,5 +18,6 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    tuto_mysquare.xml DESTINATION share/gnuradio/grc/blocks
+    tuto_mysquare.xml
+    tuto_mymultiply.xml DESTINATION share/gnuradio/grc/blocks
 )

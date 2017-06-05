@@ -22,5 +22,6 @@
 ########################################################################
 install(FILES
     api.h
-    mysquare.h DESTINATION include/tuto
+    mysquare.h
+    mymultiply.h DESTINATION include/tuto
 )

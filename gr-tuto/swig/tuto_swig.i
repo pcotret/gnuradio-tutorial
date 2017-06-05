@@ -9,8 +9,11 @@
 
 %{
 #include "tuto/mysquare.h"
+#include "tuto/mymultiply.h"
 %}
 
 
 %include "tuto/mysquare.h"
 GR_SWIG_BLOCK_MAGIC2(tuto, mysquare);
+%include "tuto/mymultiply.h"
+GR_SWIG_BLOCK_MAGIC2(tuto, mymultiply);

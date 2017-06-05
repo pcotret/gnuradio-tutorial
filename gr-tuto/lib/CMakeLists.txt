@@ -27,6 +27,7 @@ link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND tuto_sources
     mysquare_impl.cc
+    mymultiply_impl.cc
 )
 
 set(tuto_sources "${tuto_sources}" PARENT_SCOPE)
