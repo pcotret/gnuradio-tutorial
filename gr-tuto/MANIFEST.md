@@ -2,8 +2,8 @@ title: The TUTO OOT Module
 brief: Short description of gr-tuto
 tags: # Tags are arbitrary, but look at CGRAN what other authors are using
   - sdr
-author:
-  - Author Name <authors@email.address>
+author: Pascal Cotret
+  - Author Name <pascal.cotret@protonmail.ch>
 copyright_owner:
   - Copyright Owner 1
 license:
