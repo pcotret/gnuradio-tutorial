@@ -111,5 +111,18 @@ The block is ready to be compiled !
 
 First, let's create the XML interface (from the **gr-tuto** directory):
 ```bash
-gr_modtool
+gr_modtool makexml mysquare
 ```
+This tool is a bit buggy. If it doesn't succeed, you may modify the `lib/mysquare_impl.cc` file by yourself ;)
+
+The classic compilation flow come afterwards:
+```bash
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+sudo ldconfig
+```
+If everything goes fine, your module and its blocks are added in GNURadio!
+https://github.com/pcotret/gnuradio-tutorial/blob/master/img/grc_screen.png
