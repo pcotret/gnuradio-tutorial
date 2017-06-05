@@ -117,3 +117,12 @@ sudo ldconfig
 ```
 If everything goes fine, your module and its blocks are added in GNURadio!
 ![grc_screen.png](https://raw.githubusercontent.com/pcotret/gnuradio-tutorial/master/img/grc_screen.png)
+
+## Tutorial #2 - mymultiply
+Second exercise, we need to compute `output=input1*input2`.
+
+## Tutorial #3 - myadd
+Third exercise, we need to compute `output=(input1*input2)+input3`.
+
+## Tutorial #4 - On the road to Python
+Some details/hints to make similar things in Python.
