@@ -78,4 +78,33 @@ square_in_cpp_impl::square_in_cpp_impl()
               gr::io_signature::make(1, 1, sizeof (float))) // Number and type of outputs
     {}
 ```
+The forecast function:
+```C++
+void square_in_cpp_impl::forecast (int noutput_items, gr_vector_int &ninput_items_required)
+{
+ninput_items_required[0] = noutput_items;
+}
+```
+The general work function:
+```C++
+int
+    square_in_cpp_impl::general_work (int noutput_items,
+                       gr_vector_int &ninput_items,
+                       gr_vector_const_void_star &input_items,
+                       gr_vector_void_star &output_items)
+    {
+      const float *in = (const float *) input_items[0];
+      float *out = (float *) output_items[0];
 
+      // Do <+signal processing+>
+      for(int i = 0; i < noutput_items; i++) {
+        out[i] = in[i] * in[i];
+      }
+      // Tell runtime system how many input items we consumed on
+      // each input stream.
+      consume_each (noutput_items);
+
+      // Tell runtime system how many output items we produced.
+      return noutput_items;
+    }
+```
