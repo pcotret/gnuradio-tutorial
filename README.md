@@ -7,7 +7,7 @@ This tutorial will present several custom blocks:
 * **mysquare:** 1-input, 1-output. Performing a simple square operation.
 * **mymultiply:** 2-input, 1-output. The output is the product of both inputs.
 * **myadd:** 3-input, 1-output. The output is the sum of inputs.
-* *_python: same thing for those threee blocks in Python.
+* ***_python:** same thing for those threee blocks in Python.
 
 ## Creation of an OTT (Out-Of-Tree) module
 Basically, an OTT module is a component that doesn't exist in a default GNURadio installation. It can be your own blocks or blocks made by someone else, downloaded from the web. A GNURadio module is a king of library: it contains a list of blocks that can be used in a GRC schematic.
@@ -116,4 +116,4 @@ sudo make install
 sudo ldconfig
 ```
 If everything goes fine, your module and its blocks are added in GNURadio!
-(https://github.com/pcotret/gnuradio-tutorial/blob/master/img/grc_screen.png)
+[grc_screen.png](https://github.com/pcotret/gnuradio-tutorial/blob/master/img/grc_screen.png)
