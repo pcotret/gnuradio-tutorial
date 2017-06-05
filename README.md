@@ -12,13 +12,13 @@ This tutorial will present several custom blocks:
 ## Creation of an OTT (Out-Of-Tree) module
 Basically, an OTT module is a component that doesn't exist in a default GNURadio installation. It can be your own blocks or blocks made by someone else, downloaded from the web. A GNURadio module is a king of library: it contains a list of blocks that can be used in a GRC schematic.
 
-You won't be alone in this adventure. A tool called **gr_modtool** will help you with the most important operations needed to create a custom block. In order to create a custom block called **gnuradio-tutorial**, type the following command:
+You won't be alone in this adventure. A tool called `gr_modtool` will help you with the most important operations needed to create a custom block. In order to create a custom block called `gnuradio-tutorial`, type the following command:
 
-`bash
+```bash
 gr_modtool newmod tuto
-`
+```
 
-It will create a folder called **gr-tuto** with several subfolders: apps, cmake, docs. Important ones are:
+It will create a folder called `gr-tuto` with several subfolders: apps, cmake, docs. Important ones are:
 
 * lib: C++ code
 * grc: GRC/XML files
@@ -30,12 +30,14 @@ In this first exercise, taken from the official wiki, we will create a block per
 
 Disclaimers:
 
-* It is assumed we are in the **gr-tuto** directory.
+* It is assumed we are in the `gr-tuto` directory.
 * Unlike the official wiki, we won't address test codes that can be added to each block.
 
 First, create a block called `square_in_cpp`:
 
-`gr_modtool add square_in_cpp`
+```bash
+gr_modtool add square_in_cpp
+```
 
 We are asked for several things:
 
