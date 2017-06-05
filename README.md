@@ -4,9 +4,9 @@ The basic behind this tutorial is to show the **complete** flow to creat custom 
 
 This tutorial will present several custom blocks:
 
-* mysquare: 1-input, 1-output. Performing a simple square operation.
-* mymultiply: 2-input, 1-output. The output is the product of both inputs.
-* myadd: 3-input, 1-output. The output is the sum of inputs.
+* **mysquare:** 1-input, 1-output. Performing a simple square operation.
+* **mymultiply:** 2-input, 1-output. The output is the product of both inputs.
+* **myadd:** 3-input, 1-output. The output is the sum of inputs.
 * *_python: same thing for those threee blocks in Python.
 
 ## Creation of an OTT (Out-Of-Tree) module
@@ -24,23 +24,20 @@ It will create a folder called `gr-tuto` with several subfolders: apps, cmake, d
 * grc: GRC/XML files
 * python: containing the... ...Python code
 
-## Tutorial #1 - square_in_cpp
+## Tutorial #1 - mysquare
 
 In this first exercise, taken from the official wiki, we will create a block performing `output=input*input`.
 
 Disclaimers:
-
 * It is assumed we are in the `gr-tuto` directory.
 * Unlike the official wiki, we won't address test codes that can be added to each block.
 
-First, create a block called `square_in_cpp`:
-
+First, create a block called `mysquare`:
 ```bash
-gr_modtool add square_in_cpp
+gr_modtool add mysquare
 ```
 
 We are asked for several things:
-
 ```bash
 GNU Radio module name identified: tuto
 ('sink', 'source', 'sync', 'decimator', 'interpolator', 'general', 'tagged_stream', 'hier', 'noblock')
@@ -52,12 +49,10 @@ Enter valid argument list, including default arguments:
 Add Python QA code? [Y/n] n
 Add C++ QA code? [Y/n] n
 ```
-
 * **Enter block type:** choose general.
 * **Language (python/cpp):** the language used to implement the block. Choose C++.
 * **Enter valid argument list, including default arguments:** no need for arguments at this step.
 * **QA codes:** these are template codes needed for tests. We don't need it in this tutorial.
-
 Several files are generated:
 ```bash
 Adding file 'lib/square_in_cpp_impl.h'...
@@ -67,9 +62,7 @@ Editing swig/tuto_swig.i...
 Adding file 'grc/tuto_square_in_cpp.xml'...
 Editing grc/CMakeLists.txt...
 ```
-
 Modify `lib/square_in_cpp_impl.cc` with your favourite editor.
-
 The private constructor:
 ```C++
 square_in_cpp_impl::square_in_cpp_impl()
@@ -108,13 +101,11 @@ int square_in_cpp_impl::general_work (int noutput_items,
     }
 ```
 The block is ready to be compiled !
-
 First, let's create the XML interface (from the **gr-tuto** directory):
 ```bash
 gr_modtool makexml mysquare
 ```
 This tool is a bit buggy. If it doesn't succeed, you may modify the `lib/mysquare_impl.cc` file by yourself ;)
-
 The classic compilation flow come afterwards:
 ```bash
 mkdir build
