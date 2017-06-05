@@ -68,7 +68,14 @@ Adding file 'grc/tuto_square_in_cpp.xml'...
 Editing grc/CMakeLists.txt...
 ```
 
-Modify `lib/square_in_cpp_impl.cc` with your favourite editor:
+Modify `lib/square_in_cpp_impl.cc` with your favourite editor.
 
-
+The private constructor:
+```C++
+square_in_cpp_impl::square_in_cpp_impl()
+      : gr::block("square_in_cpp",
+              gr::io_signature::make(1, 1, sizeof (float)), // Number and type of inputs
+              gr::io_signature::make(1, 1, sizeof (float))) // Number and type of outputs
+    {}
+```
 
