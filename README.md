@@ -68,5 +68,7 @@ Adding file 'grc/tuto_square_in_cpp.xml'...
 Editing grc/CMakeLists.txt...
 ```
 
+Modify `lib/square_in_cpp_impl.cc` with your favourite editor:
+
 
 
