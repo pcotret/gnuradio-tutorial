@@ -4,9 +4,9 @@ The basic behind this tutorial is to show the **complete** flow to creat custom 
 
 This tutorial will present several custom blocks:
 
-* square_in_cpp: 1-input, 1-output. Performing a simple square operation.
-* multiply_sig_cpp: 2-input, 1-output. The output is the product of both inputs.
-* add_sig_cpp: 3-input, 1-output. The output is the sum of inputs.
+* mysquare: 1-input, 1-output. Performing a simple square operation.
+* mymultiply: 2-input, 1-output. The output is the product of both inputs.
+* myadd: 3-input, 1-output. The output is the sum of inputs.
 * *_python: same thing for those threee blocks in Python.
 
 ## Creation of an OTT (Out-Of-Tree) module
