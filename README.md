@@ -40,21 +40,13 @@ First, create a block called `square_in_cpp`:
 We are asked for several things:
 
 `GNU Radio module name identified: tuto
-
 ('sink', 'source', 'sync', 'decimator', 'interpolator', 'general', 'tagged_stream', 'hier', 'noblock')
-
 Enter block type: general
-
 Language (python/cpp): cpp
-
 Language: C++
-
 Block/code identifier: square_in_cpp
-
 Enter valid argument list, including default arguments: 
-
 Add Python QA code? [Y/n] n
-
 Add C++ QA code? [Y/n] n`
 
 * Enter block type: choose general.
