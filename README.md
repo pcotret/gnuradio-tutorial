@@ -14,9 +14,9 @@ Basically, an OTT module is a component that doesn't exist in a default GNURadio
 
 You won't be alone in this adventure. A tool called **gr_modtool** will help you with the most important operations needed to create a custom block. In order to create a custom block called **gnuradio-tutorial**, type the following command:
 
-```bash
+`bash
 gr_modtool newmod tuto
-```
+`
 
 It will create a folder called **gr-tuto** with several subfolders: apps, cmake, docs. Important ones are:
 
@@ -24,7 +24,7 @@ It will create a folder called **gr-tuto** with several subfolders: apps, cmake,
 * grc: GRC/XML files
 * python: containing the... ...Python code
 
- ## Tutorial #1 - square_in_cpp
+## Tutorial #1 - square_in_cpp
 
 In this first exercise, taken from the official wiki, we will create a block performing `output=input*input`.
 
@@ -39,15 +39,23 @@ First, create a block called `square_in_cpp`:
 
 We are asked for several things:
 
-``GNU Radio module name identified: tuto
+`GNU Radio module name identified: tuto
+
 ('sink', 'source', 'sync', 'decimator', 'interpolator', 'general', 'tagged_stream', 'hier', 'noblock')
+
 Enter block type: general
+
 Language (python/cpp): cpp
+
 Language: C++
+
 Block/code identifier: square_in_cpp
+
 Enter valid argument list, including default arguments: 
+
 Add Python QA code? [Y/n] n
-Add C++ QA code? [Y/n] n``
+
+Add C++ QA code? [Y/n] n`
 
 * Enter block type: choose general.
 * Language (python/cpp): the language used to implement the block. Choose C++.
