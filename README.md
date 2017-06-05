@@ -53,19 +53,20 @@ Add Python QA code? [Y/n] n
 Add C++ QA code? [Y/n] n
 ```
 
-* Enter block type: choose general.
-* Language (python/cpp): the language used to implement the block. Choose C++.
-* Enter valid argument list, including default arguments: no need for arguments at this step.
-* QA codes: these are template codes needed for tests. We don't need it in this tutorial.
+* **Enter block type:** choose general.
+* **Language (python/cpp):** the language used to implement the block. Choose C++.
+* **Enter valid argument list, including default arguments:** no need for arguments at this step.
+* **QA codes:** these are template codes needed for tests. We don't need it in this tutorial.
 
 Several files are generated:
-
-``Adding file 'lib/square_in_cpp_impl.h'...
+```bash
+Adding file 'lib/square_in_cpp_impl.h'...
 Adding file 'lib/square_in_cpp_impl.cc'...
 Adding file 'include/tuto/square_in_cpp.h'...
 Editing swig/tuto_swig.i...
 Adding file 'grc/tuto_square_in_cpp.xml'...
-Editing grc/CMakeLists.txt...``
+Editing grc/CMakeLists.txt...
+```
 
 
 
