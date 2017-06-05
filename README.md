@@ -1,6 +1,6 @@
 # Gnuradio tutorial - How to create custom blocks ?
 
-The basic behind this tutorial is to show the **complete** flow to creat custom blocks in Gnuradio in both C++ and Python. We'll go through several steps starting with the official tutorial given by GNURadio on their wiki (https://wiki.gnuradio.org/index.php/OutOfTreeModules)
+The basic behind this tutorial is to show the **complete** flow to create custom blocks in Gnuradio in both C++ and Python. We'll go through several steps starting with the official tutorial given by GNURadio on their wiki (https://wiki.gnuradio.org/index.php/OutOfTreeModules)
 
 This tutorial will present several custom blocks:
 
